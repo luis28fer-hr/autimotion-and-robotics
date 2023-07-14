@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="/javascrips/index.js"></script>
+    <script defer src="/javascrips/index.js"></script>
 </head>
 <body>
     <header>
@@ -29,12 +29,27 @@
         </div>
     </header>
     <section class="presentation">
-        <h1>“We don’t expect success we prepare for it...”</h1>
-        <img src="/imgs/fondo_home.jpg" alt="Fondo home">
-        <div class="sobre-fondo">a</div>
+        <h1 id ="presentation-titulo">We don’t expect success we prepare for it...</h1>
+        <p id="presentacion-titulo-descripcion"></p>
+        <div class="carrusel">
+            <div class="slide">
+                <img src="https://www.qualitymag.com/ext/resources/Issues/2023/May/VS0523-FEAT-DeepLearn-p1FT-Manufacturing_Floor_Image-LandingAI.jpg?1682967311" alt="Fondo home">
+            </div>          
+            <div class="slide">
+                <img src="https://cms.nsflow.com/wp-content/uploads/2022/08/Industrial-automation-main.jpg" alt="Fondo home">
+            </div>
+            <div class="slide">
+                <img src="https://themanufacturer-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/04/22155513/Automotive-automation-3-2.jpg" alt="Fondo home">
+            </div>  
+            <div class="slide">
+                <img src="https://cdn.shopify.com/s/files/1/0061/7735/7891/articles/Automated_Factory_a78e4a09-7668-45da-835c-d7d8c9140035.jpg?v=1585330469&width=1100" alt="Fondo home">
+            </div>
+ 
+        </div>
+        <div class="sobre-fondo"></div>
     </section>
     <section class="welcome efecto-luz">
-        <div>
+        <div class="hidden">
             <p>
                 Our controls designs, PLC programming, simulation and robotics are applied for the automation 
                 of various processes in the automotive industry such as assembly line welding robots, seal 
@@ -45,19 +60,19 @@
                 production lines in the BIW plants of the major automotive companies such as Chrysler, Ford and GM.
             </p>
         </div>
-        <img src="/svgs/Polygon Luminary.svg" alt="circuit">
+        <img class="hidden" src="/svgs/Animated Shape2.svg" alt="circuit">
 
     </section>
     
     <footer>
-        <div class="redes">
+        <div class="redes hidden">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-solid fa-location-dot"></i>
             <i class="fa-solid fa-envelope"></i>
             <i class="fa-solid fa-phone"></i>
             <i class="fa-brands fa-linkedin"></i>
         </div>
-        <div class="footer">
+        <div class="footer hidden">
             <div class="logo-footer">
                 <img class="logo1" src="/imgs/logo.png" alt="logo">
                 <img class="logo2" src="/imgs/logo2.png" alt="logo">
