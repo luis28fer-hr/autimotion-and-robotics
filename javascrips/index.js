@@ -39,9 +39,9 @@ var descripcion = document.getElementById("presentacion-titulo-descripcion");
 
 var nuevosTextos = ["Indultrial Automation Services", "Hardware and Software Design", "Robotic Simulations", "We don’t expect success we prepare for it..."]; // Array con los nuevos textos
 var nuevosTextosDescripcion = [
-  "Covers most of the current systems int the BIW plants of the automotive industry”", 
-  "Lorem lorem lorem",
-  "Lorem lorem lorem lorem lorem lorem", 
+  "Covers most of the current systems int the BIW plants of the automotive industry.", 
+  "Provide and maintain our quality services to customers exceeding their controls and robotics needs in their tools.",
+  "Our experience covers most of the current systems in the BIW plants.", 
   ""]; // Array con los nuevos textos
 
 
@@ -72,5 +72,5 @@ document.addEventListener('mousemove', function(e) {
     var x = e.clientX;
     var y = e.clientY;
     
-    luz.style.background = 'radial-gradient(circle ' + '20rem ' + 'at ' + x + 'px ' + y + 'px, transparent, rgba(0, 31, 61, 0.5))';
+    luz.style.background = 'radial-gradient(circle ' + '15rem ' + 'at ' + x + 'px ' + y + 'px, transparent, rgba(0, 31, 61, 0.8))';
   });
