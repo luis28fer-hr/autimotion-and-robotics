@@ -1,3 +1,22 @@
+//Animacion para que el header-logo se desplace hacia arriba y el header-barra de navegacion se mantenga y ocupe su lugar
+
+var miNav = document.getElementById("nav");
+var miHeader = document.getElementById("logo");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 100) { // Cambiar 200 por la posición en la que deseas aplicar la propiedad CSS
+    miNav.classList.add("scroll-activo");
+    miHeader.classList.add("scroll-insible")
+  } else {
+    miNav.classList.remove("scroll-activo");
+    miHeader.classList.remove("scroll-insible")
+
+  }
+});
+
+
+
+
 //Animacion para que los elementos vayan apareciendo segun el scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

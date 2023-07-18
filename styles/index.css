@@ -10,7 +10,6 @@ html{
     margin: 0;
     padding: 0;
     color: white;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -18,12 +17,16 @@ body{
     background-image: linear-gradient(to bottom, #02172c, #031527, #041221, #030f1c, #020c17, #030e19, #04101c, #05121e, #061829, #031d34, #01213f, #00264b);
 }
 header{
+    position: relative;
     width: 100%;
     background-color: rgb(0, 16, 31);
     z-index: 50;
-    position: fixed;
+    
 }
+
 header .logo{
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +34,11 @@ header .logo{
     padding: 1rem;
     user-select: none;
     cursor: pointer;
+    z-index: 40;
+}
+.scroll-insible{
+    
+    position: absolute;
 }
 
 header .logo .logo1{
@@ -44,9 +52,18 @@ header .logo .logo2{
 }
 
 header .links{
-    
     width: 100%;
     background-color: #011A32;
+    z-index: 50; 
+    transition: top 0.3s ease-in-out;
+
+}
+.scroll-activo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(236, 240, 241, 0.3);
+
 }
 
 .links ul{
@@ -54,6 +71,7 @@ header .links{
     align-items: center;
     justify-content: center;
     gap: 0.2rem;
+    list-style: none;
 }
 .links ul li{
     width: 10%;
@@ -63,15 +81,22 @@ header .links{
 
 }
 
+.links ul .active-link{
+    border-bottom: 5px solid #2CB1F3;
+    padding: 0.80rem 0;
+    cursor: pointer;
+}
+
+
 .links ul li:hover{
-    border-bottom: 4px solid #2CB1F3;
+    border-bottom: 5px solid #D5DBDB;
     padding: 0.80rem 0;
     cursor: pointer;
 }
 
 .links ul li:hover a{
     font-weight: 600;
-    color: #2CB1F3;
+    color: #D5DBDB;
 }
 
 .links ul li a{
@@ -82,7 +107,12 @@ header .links{
     font-weight: 500;
     transition: all 0.3s ease-in;
 }
+.links ul li .active-text{
+    color: #259bd6;
+    font-weight: 700;
+    letter-spacing: 1px;
 
+}
 
 footer{
     width: 100%;
@@ -150,7 +180,7 @@ footer .footer{
 .hidden {
     opacity: 0;
     filter: blur();
-    transition: all ease-in 1.3s;
+    transition: all 1.2s ease-in
 }
 
 .show{

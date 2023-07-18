@@ -8,19 +8,23 @@
     
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/home-services.css">
+    <link rel="stylesheet" href="/styles/home-working.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script defer src="/javascrips/index.js"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
             <img class="logo1" src="/imgs/logo.png" alt="logo">
             <img class="logo2" src="/imgs/logo2.png" alt="logo">
         </div>
-        <div class="links">
+        <div id="nav" class="links">
             <ul>
-                <li><a href="">Home</a></li>
+                <li class="active-link"><a href="" class="active-text">Home</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Experience</a></li>
@@ -29,7 +33,7 @@
         </div>
     </header>
     <section class="presentation">
-        <h1 id ="presentation-titulo">We don’t expect success we prepare for it...</h1>
+        <h1 id ="presentation-titulo" class="hidden">We don’t expect success we prepare for it...</h1>
         <p id="presentacion-titulo-descripcion"></p>
         <div class="carrusel">
             <div class="slide">
@@ -63,7 +67,75 @@
         <img class="hidden" src="/svgs/Animated Shape2.svg" alt="circuit">
 
     </section>
-    
+    <section class="services">
+        <div class="contenedor-grid">
+            <div class="item-grid card hidden">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <h2 class="hidden">Engineering Services</h2>
+                <ul class="hidden">
+                    <li>Industrial Process Simulation </li>
+                    <li>Automation and Controls Design</li>
+                    <li>Training</li>
+                    <li>PLC and HMI Programming</li>
+                    <li>Panel Building </li>
+                    <li>Industrial Robot Programming</li>
+                    <li>Hemming Press</li>
+                </ul>
+            </div>
+            <div class="item-grid card hidden">
+                <i class="fa-regular fa-circle-question"></i>
+                <h2 class="hidden">Robotics Solutions</h2>
+                <ul class="hidden">
+                    <li>MIG Welding </li>
+                    <li>Vision Systems</li>
+                    <li>Servo Guns</li>
+                    <li>STUD Welding</li>
+                    <li>Welding and Cutting Laser </li>
+                    <li>Seal</li>
+                    <li>Material Handler</li>
+                </ul>
+            </div>
+            <div class="item-grid card hidden">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h2 class="hidden">AUTI MOTION</h2>
+                <p class="hidden">
+                    We develop integral packages for the solution of specific necessities. 
+                    Our objective is to guarantee the wished results and offering an 
+                    added value to each one of our clients.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="working">
+        <h2 class="hidden">WORKING</h2>
+        <p class="working-descripcion hidden">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to...
+        </p>
+        <div class="working-grid">
+            <div class="working-item hidden">
+                <img class="hidden" src="https://www.betterup.com/hubfs/Man%20has%20overwork%20and%20sitting%20with%20laptop%20and%20table%20lamp.%20Mental%20work%20with%20paper.%20Empty%20office.jpg" alt="">
+                <p class="hidden">Workteam</p>
+            </div>
+            <div class="working-item hidden">
+                <img class="hidden" src="https://pplprs.co.uk/wp-content/uploads/People-working-1.jpg" alt="">
+                <p class="hidden">Innovation</p>
+            </div>
+            <div class="working-item hidden">
+                <img class="hidden" src="https://i0.wp.com/businessday.ng/wp-content/uploads/2020/12/innovation.jpg?fit=700%2C425&ssl=1" alt="">
+                <p  class="hidden">responsability</p>
+            </div>
+            <div class="working-item hidden">
+                <img class="hidden" src="https://www.betterup.com/hubfs/Man%20has%20overwork%20and%20sitting%20with%20laptop%20and%20table%20lamp.%20Mental%20work%20with%20paper.%20Empty%20office.jpg" alt="">
+                <p class="hidden">proactive</p>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div class="redes hidden">
             <i class="fa-brands fa-facebook"></i>
