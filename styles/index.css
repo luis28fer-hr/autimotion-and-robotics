@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-html{
+html {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,18 +14,19 @@ html{
     text-decoration: none;
 }
 
-body{
+body {
     background-image: linear-gradient(to bottom, #02172c, #031527, #041221, #030f1c, #020c17, #030e19, #04101c, #05121e, #061829, #031d34, #01213f, #00264b);
 }
-header{
+
+header {
     position: relative;
     width: 100%;
     background-color: rgb(0, 16, 31);
     z-index: 50;
-    
+
 }
 
-header .logo{
+header .logo {
     top: 0;
     left: 0;
     display: flex;
@@ -36,29 +38,32 @@ header .logo{
     cursor: pointer;
     z-index: 40;
 }
-.scroll-insible{
-    
+
+.scroll-insible {
+
     position: absolute;
 }
 
-header .logo .logo1{
+header .logo .logo1 {
     width: 5%;
     cursor: pointer;
-    
+
 }
-header .logo .logo2{
+
+header .logo .logo2 {
     width: 10%;
     cursor: pointer;
 }
 
-header .links{
+header .links {
     width: 100%;
     background-color: #011A32;
-    z-index: 50; 
+    z-index: 50;
     transition: top 0.3s ease-in-out;
 
 }
-.scroll-activo{
+
+.scroll-activo {
     position: fixed;
     top: 0;
     left: 0;
@@ -66,40 +71,39 @@ header .links{
 
 }
 
-.links ul{
+.links ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.2rem;
     list-style: none;
 }
-.links ul li{
+
+.links ul li {
     width: 10%;
     padding: 1rem 0;
     text-align: center;
-
-
 }
 
-.links ul .active-link{
+.links ul .active-link {
     border-bottom: 5px solid #2CB1F3;
     padding: 0.80rem 0;
     cursor: pointer;
 }
 
 
-.links ul li:hover{
+.links ul li:hover {
     border-bottom: 5px solid #D5DBDB;
     padding: 0.80rem 0;
     cursor: pointer;
 }
 
-.links ul li:hover a{
+.links ul li:hover a {
     font-weight: 600;
     color: #D5DBDB;
 }
 
-.links ul li a{
+.links ul li a {
     padding: 1rem 1rem;
     width: 100%;
     text-transform: uppercase;
@@ -107,19 +111,20 @@ header .links{
     font-weight: 500;
     transition: all 0.3s ease-in;
 }
-.links ul li .active-text{
+
+.links ul li .active-text {
     color: #259bd6;
     font-weight: 700;
     letter-spacing: 1px;
 
 }
 
-footer{
+footer {
     width: 100%;
     background-color: #00080F;
 }
 
-footer .redes{
+footer .redes {
     background-color: #070B13;
     padding: 1.3rem;
     display: flex;
@@ -127,21 +132,22 @@ footer .redes{
     justify-content: center;
     gap: 0.5rem;
 }
-footer .redes i{
+
+footer .redes i {
     font-size: 1.2rem;
     background-color: #05080e7c;
     padding: 0.7rem;
     border-radius: 50%;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-footer .redes i:hover{
+footer .redes i:hover {
     cursor: pointer;
-    background-color: #259bd6;
+    background-image: linear-gradient(45deg,rgba(0, 255, 236, 0.9), rgba(0, 121, 229, 0.9));
     transform: translateY(-10px);
 }
 
-footer .footer{
+footer .footer {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -150,7 +156,7 @@ footer .footer{
     gap: 2rem;
 }
 
-.footer .logo-footer{
+.footer .logo-footer {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -158,17 +164,18 @@ footer .footer{
     cursor: pointer;
 }
 
-.footer .logo-footer .logo1{
+.footer .logo-footer .logo1 {
     width: 6rem;
     cursor: pointer;
-    
+
 }
-.footer .logo-footer .logo2{
+
+.footer .logo-footer .logo2 {
     width: 10rem;
     cursor: pointer;
 }
 
-.footer .copy{
+.footer .copy {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -183,7 +190,7 @@ footer .footer{
     transition: all 1.2s ease-in
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur();
 }
