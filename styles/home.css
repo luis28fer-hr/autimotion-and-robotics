@@ -67,16 +67,8 @@
 .presentation .carrusel .slide.active {
     opacity: 1;
     display: block;
-    transform: scale(1);
 }
 
-.presentation .carrusel .slide.previous {
-    transform: translateX(-100%);
-  }
-  
-.presentation .carrusel .slide.next {
-    transform: translateX(100%);
-}
 
 .presentation .carrusel .slide img{
     width: 100%;
@@ -84,8 +76,6 @@
     object-fit: cover;
     filter: blur(0px);
     user-select: none;
-
-
 }
 
 .presentation .sobre-fondo{
