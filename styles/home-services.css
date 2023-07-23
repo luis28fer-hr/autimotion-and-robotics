@@ -64,6 +64,7 @@
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.3s ease-in;
+    cursor: text;
 }
 
 .services .card h2:hover{
@@ -80,6 +81,7 @@
     align-items: start;
     justify-content: start;
     gap: 0.6rem;
+    cursor: text;
 }
 
 .services .card p{
@@ -88,6 +90,7 @@
     font-weight: 400;
     text-align: justify;
     line-height: 1.4rem;
+    cursor: text;
 }
 
   @keyframes rotar {

@@ -6,11 +6,8 @@ var miHeader = document.getElementById("logo");
 window.addEventListener("scroll", function() {
   if (window.scrollY > 100) { // Cambiar 200 por la posición en la que deseas aplicar la propiedad CSS
     miNav.classList.add("scroll-activo");
-    miHeader.classList.add("scroll-insible")
   } else {
     miNav.classList.remove("scroll-activo");
-    miHeader.classList.remove("scroll-insible")
-
   }
 });
 

@@ -22,8 +22,6 @@ header {
     position: relative;
     width: 100%;
     background-color: rgb(0, 16, 31);
-    z-index: 50;
-
 }
 
 header .logo {
@@ -36,18 +34,15 @@ header .logo {
     padding: 1rem;
     user-select: none;
     cursor: pointer;
-    z-index: 40;
 }
 
 .scroll-insible {
-
     position: absolute;
 }
 
 header .logo .logo1 {
     width: 5%;
     cursor: pointer;
-
 }
 
 header .logo .logo2 {
@@ -68,7 +63,6 @@ header .links {
     top: 0;
     left: 0;
     border-bottom: 1px solid rgba(236, 240, 241, 0.3);
-
 }
 
 .links ul {
@@ -79,28 +73,26 @@ header .links {
     list-style: none;
 }
 
-.links ul li {
+.links ul li{
     width: 10%;
-    padding: 1rem 0;
     text-align: center;
+    padding: 1rem 0;
+
 }
 
 .links ul .active-link {
-    border-bottom: 5px solid #2CB1F3;
-    padding: 0.80rem 0;
+    border-bottom: 4px solid #2CB1F3;
     cursor: pointer;
 }
 
 
 .links ul li:hover {
-    border-bottom: 5px solid #D5DBDB;
-    padding: 0.80rem 0;
     cursor: pointer;
+    background-color: #001529;
 }
 
 .links ul li:hover a {
-    font-weight: 600;
-    color: #D5DBDB;
+    color: #ffffff;
 }
 
 .links ul li a {
@@ -108,8 +100,10 @@ header .links {
     width: 100%;
     text-transform: uppercase;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     transition: all 0.3s ease-in;
+    color: #B3B6B7;
 }
 
 .links ul li .active-text {
