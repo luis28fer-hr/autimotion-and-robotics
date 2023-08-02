@@ -63,8 +63,6 @@ var nuevosTextosDescripcion = [
 
 var indice = 0; // Índice inicial
 
-
-
 function actualizarTexto() {
   var nuevoTexto = nuevosTextos[indice]; // Obtiene el nuevo texto según el índice
   titulo.textContent = nuevoTexto; // Actualiza el texto del párrafo
@@ -79,6 +77,7 @@ function actualizarTexto() {
 }
 
 setInterval(actualizarTexto, 12050); // Ejecuta la función cada 10 segundos (10000 ms)
+
 
 
 
